@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -r build
+mkdir build
+ln -s build/src bin
+
+cd build
+cmake .. "$@"
